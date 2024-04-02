@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="?selectableItemBackground"
+    android:padding="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Item"/>
 
     <TextView
         android:id="@+id/tv_description"
@@ -11,4 +27,13 @@
         android:textSize="18sp"
         android:text="Item"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/tv_description"
+        android:layout_alignParentEnd="true"
+    ></CheckBox>
+
+</RelativeLayout>
