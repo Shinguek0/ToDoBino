@@ -30,9 +30,9 @@
     </LinearLayout>
 
     <CheckBox
+        android:id="@+id/cb_complete"
         android:layout_width="15dp"
         android:layout_height="15dp"
-        android:layout_below="@+id/tv_description"
         android:layout_alignParentEnd="true"
     ></CheckBox>
 
